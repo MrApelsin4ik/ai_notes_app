@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7AFCC"
+    android:padding="16dp">
+
+    <!-- Кнопка Назад -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+
+        android:src="@drawable/ic_back_arrow"
+        android:background="@drawable/add_btn_backround"
+        android:contentDescription="Назад"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Кнопка меню с тремя точками -->
+    <ImageButton
+        android:id="@+id/menuButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+
+        android:src="@drawable/ic_menu_dots"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Меню"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Поле для заголовка -->
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Заголовок"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:textColorHint="#78000000"
+        android:textSize="18sp"
+        android:layout_below="@id/backButton"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Поле для содержимого заметки -->
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Текст заметки"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:textColorHint="#77000000"
+        android:textSize="16sp"
+        android:layout_below="@id/titleEditText"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

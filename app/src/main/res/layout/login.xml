@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#A7AFCC">
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Почта"
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#B4000000"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Пароль"
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp"
+        android:inputType="textPassword"
+        android:textColorHint="#B5000000"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Регистрация"
+        android:background="@drawable/rounded_button"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Есть аккаунт? Вход"
+        android:textColor="#3B61C0"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"/>
+
+</LinearLayout>

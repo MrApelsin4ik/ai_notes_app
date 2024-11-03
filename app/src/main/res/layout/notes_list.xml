@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7AFCC">
+
+    <!-- Поиск -->
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="1000dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@id/profileIcon"
+        android:hint="Поиск"
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textColorHint="#000000"/>
+
+    <!-- Иконка профиля -->
+    <ImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_profile" />
+
+    <!-- Элемент списка заметок -->
+    <LinearLayout
+        android:id="@+id/noteItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#EAF4FF"
+        android:padding="16dp"
+        android:layout_below="@id/searchEditText"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Заголовок"
+            android:textColor="#3B61C0"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Описание"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <!-- Кнопка для добавления новой заметки -->
+    <ImageButton
+        android:id="@+id/addNoteButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/add_btn_backround"
+        android:src="@drawable/ic_add"
+        android:contentDescription="Добавить заметку"/>
+
+</RelativeLayout>
